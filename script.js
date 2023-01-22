@@ -1,16 +1,29 @@
-//Updating the color theme when the user clicks on the button
+const colorPicker = document.getElementById("color-picker");
 
-//select all buttons
-const themeSelector = document.querySelectorAll(".themes");
-const themeButtons = themes.querySelectorAll("button");
+colorPicker.addEventListener("change", (event) => {
+    if (event.target.classList.contains("color-option")) {
+    const selectedColor = event.target.id;
 
-//logs the button that was clicked
-const handleChosenTheme = (event) => {
-    console.log(event.target);
+    // Change the state of the buttons
+    Array.from(colorPicker.children).forEach((el) => {
+        el.setAttribute("aria-pressed", "false");
+    });
+    event.target.setAttribute("aria-pressed", "true");
+
+    //change the background when button is clicked
+    document.body.style.backgroundColor = selectedColor;
+    
+    // Change the theme of the page
+    document.body.style.setProperty("--main-color", selectedColor);
+    
+    // Save the selected theme
+    localStorage.setItem("color", selectedColor);
     }
+});
 
-//adds event listener to each button
-themeButtons.forEach((button) => {
-    button.addEventListener("click", handleChosenTheme);
-    }
-);
+const savedColor = localStorage.getItem("color");
+    if (savedColor) {
+    document.body.style.setProperty("--main-color", savedColor);
+    document.getElementById(savedColor).setAttribute("aria-pressed", "true");
+};
+

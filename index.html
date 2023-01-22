@@ -4,20 +4,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Themes Selector</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Select Theme</h1>
-        <div class="themes">
+        <h1>Select Color Theme</h1>
+        <div id="themes">
             <!---- The aria-pressed attribute is used to indicate the state of a button, tells assistive technology whether the button is checked or not. It can be set to true or false. True is the default ---->
-            <button class="btn" aria-pressed="true">Red</button>
-            <button class="btn" aria-pressed="false">Blue</button>
-            <button class="btn" aria-pressed="false">Orange</button>
-            <button class="btn" aria-pressed="false">Green</button>
-            <button class="btn" aria-pressed="false">Purple</button>
+            <div class="red-container">
+                <p>RED</p>
+                <button class="color-btn" id="red" aria-pressed="true" aria-label="red color theme"></button>
+            </div>
+            <div class="blue-container">
+                <p>BLUE</p>
+                <button class="color-btn" id="blue" aria-pressed="false" aria-label="blue color theme"></button>
+            </div>
+            <div class="orange-container">
+                <p>ORANGE</p>
+                <button class="color-btn" id="orange" aria-pressed="false" aria-label="orange color theme"></button>
+            </div>
+            <div class="green-container">
+                <p>GREEN</p>
+                <button class="color-btn" id="green" aria-pressed="false" aria-label="green color theme"></button>
+            </div>
+            <div class="purple-container">
+                <p>PURPLE</p>
+                <button class="color-btn" id="purple" aria-pressed="false" aria-label="purple color theme"></button>
+            </div>
         </div>
     </div>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
