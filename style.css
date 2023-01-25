@@ -1,6 +1,8 @@
 .color-btn {
     background-color: transparent;
     font-size: 2rem;
+}
+input {
     cursor: pointer;
     border-radius: 3px;
     border-color: black;
@@ -32,23 +34,23 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#red {
+.red-btn {
     background-color: red;
 }
 
-#blue {
+.blue-btn {
     background-color: blue;
 }
 
-#orange {
+.orange-btn {
     background-color: orange;
 }
 
-#green {
+.green-btn {
     background-color: green;
 }
 
-#purple {
+.purple-btn {
     background-color: purple;
 }
 
