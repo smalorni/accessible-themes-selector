@@ -3,33 +3,33 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Themes Selector</title>
+    <title>Color Selector</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Select Color Theme</h1>
+        <h1>Select A Color 🎨</h1>
         <div id="themes">
             <!---- The aria-pressed attribute is used to indicate the state of a button, tells assistive technology whether the button is checked or not. It can be set to true or false. True is the default ---->
             <div class="red-container">
                 <p>RED</p>
-                <input type="button" onclick="changeBackground('red')" class="red-btn" data-theme="red"  aria-pressed="true" aria-label="red color theme"></input>
+                <button onclick="changeBackground('#ce0606')" class="red-btn" data-theme="red"  aria-pressed="true" aria-label="red color theme"></button>
             </div>
             <div class="blue-container">
                 <p>BLUE</p>
-                <input type="button" onclick="changeBackground('blue')" class="blue-btn" data-theme="blue" aria-pressed="false" aria-label="blue color theme"></input>
+                <button onclick="changeBackground('#0909d5')" class="blue-btn" data-theme="blue" aria-pressed="false" aria-label="blue color theme"></button>
             </div>
             <div class="orange-container">
                 <p>ORANGE</p>
-                <input type="button" onclick="changeBackground('orange')" class="orange-btn" data-theme="orange" aria-pressed="false" aria-label="orange color theme"></input>
+                <button onclick="changeBackground('#f74a05')" class="orange-btn" data-theme="orange" aria-pressed="false" aria-label="orange color theme"></button>
             </div>
             <div class="green-container">
                 <p>GREEN</p>
-                <input type="button" onclick="changeBackground('green')" class="green-btn" data-theme="green" aria-pressed="false" aria-label="green color theme"></input>
+                <button onclick="changeBackground('#008001')" class="green-btn" data-theme="green" aria-pressed="false" aria-label="green color theme"></button>
             </div>
             <div class="purple-container">
                 <p>PURPLE</p>
-                <input type="button" onclick="changeBackground('purple')" class="purple-btn" data-theme="purple" aria-pressed="false" aria-label="purple color theme"></input>
+                <button onclick="changeBackground('#800080')" class="purple-btn" data-theme="purple" aria-pressed="false" aria-label="purple color theme"></button>
             </div>
         </div>
     </div>
